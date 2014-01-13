@@ -44,6 +44,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         labelGestionDesColloques.setText("GESTION DES COLLOQUES");
 
         btnConsulter.setText("Consulter les données");
+        btnConsulter.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnConsulterMouseClicked(evt);
+            }
+        });
         btnConsulter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnConsulterActionPerformed(evt);
@@ -82,10 +87,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(labelGestionDesColloques, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(228, 228, 228))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(135, 135, 135)
                 .addComponent(btnConsulter, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -95,11 +96,15 @@ public class MenuPrincipal extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(35, 35, 35)
                 .addComponent(btnGererParticipant, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 107, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnImporter, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(97, 97, 97)
                 .addComponent(btnQuitter, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(190, Short.MAX_VALUE)
+                .addComponent(labelGestionDesColloques, javax.swing.GroupLayout.PREFERRED_SIZE, 372, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(190, 190, 190))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -139,30 +144,30 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private void btnImporterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnImporterActionPerformed
         MenuImporter MenuImporter = new MenuImporter();
         MenuImporter.setTitle("Menu Importer");
-        this.dispose();
         MenuImporter.setVisible(true);
     }//GEN-LAST:event_btnImporterActionPerformed
 
     private void btnConsulterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsulterActionPerformed
         MenuConsulter MenuConsulter = new MenuConsulter();
         MenuConsulter.setTitle("Menu Consulter");
-        this.dispose();
         MenuConsulter.setVisible(true);
     }//GEN-LAST:event_btnConsulterActionPerformed
 
     private void btnGererColloqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGererColloqueActionPerformed
         MenuGererColloque MenuGererColloque = new MenuGererColloque();
         MenuGererColloque.setTitle("Menu Gerer Colloque");
-        this.dispose();
         MenuGererColloque.setVisible(true);
     }//GEN-LAST:event_btnGererColloqueActionPerformed
 
     private void btnGererParticipantActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGererParticipantActionPerformed
         MenuGererParticipant MenuGererParticipant = new MenuGererParticipant();
         MenuGererParticipant.setTitle("Menu Gerer Participant");
-        this.dispose();
         MenuGererParticipant.setVisible(true);
     }//GEN-LAST:event_btnGererParticipantActionPerformed
+
+    private void btnConsulterMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnConsulterMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnConsulterMouseClicked
 
     /**
      * @param args the command line arguments
