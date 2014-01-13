@@ -62,6 +62,11 @@ public class MenuConsulter extends javax.swing.JFrame {
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Une réunion", "Item 2", "Item 3", "Item 4" }));
 
         jButtonRechercheC.setText("Rechercher");
+        jButtonRechercheC.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButtonRechercheCMouseClicked(evt);
+            }
+        });
         jButtonRechercheC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonRechercheCActionPerformed(evt);
@@ -154,6 +159,11 @@ public class MenuConsulter extends javax.swing.JFrame {
     private void jButtonAnnulerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonAnnulerMouseClicked
         this.dispose();
     }//GEN-LAST:event_jButtonAnnulerMouseClicked
+
+    private void jButtonRechercheCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonRechercheCMouseClicked
+                AfficherParticipant afficherPart = new AfficherParticipant();
+                afficherPart.setVisible(true);
+    }//GEN-LAST:event_jButtonRechercheCMouseClicked
 
     /**
      * @param args the command line arguments
