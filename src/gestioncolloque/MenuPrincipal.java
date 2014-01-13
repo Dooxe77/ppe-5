@@ -139,24 +139,28 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private void btnImporterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnImporterActionPerformed
         MenuImporter MenuImporter = new MenuImporter();
         MenuImporter.setTitle("Menu Importer");
+        this.dispose();
         MenuImporter.setVisible(true);
     }//GEN-LAST:event_btnImporterActionPerformed
 
     private void btnConsulterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsulterActionPerformed
         MenuConsulter MenuConsulter = new MenuConsulter();
         MenuConsulter.setTitle("Menu Consulter");
+        this.dispose();
         MenuConsulter.setVisible(true);
     }//GEN-LAST:event_btnConsulterActionPerformed
 
     private void btnGererColloqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGererColloqueActionPerformed
         MenuGererColloque MenuGererColloque = new MenuGererColloque();
         MenuGererColloque.setTitle("Menu Gerer Colloque");
+        this.dispose();
         MenuGererColloque.setVisible(true);
     }//GEN-LAST:event_btnGererColloqueActionPerformed
 
     private void btnGererParticipantActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGererParticipantActionPerformed
         MenuGererParticipant MenuGererParticipant = new MenuGererParticipant();
         MenuGererParticipant.setTitle("Menu Gerer Participant");
+        this.dispose();
         MenuGererParticipant.setVisible(true);
     }//GEN-LAST:event_btnGererParticipantActionPerformed
 
